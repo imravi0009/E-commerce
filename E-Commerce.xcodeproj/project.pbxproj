@@ -15,6 +15,14 @@
 		DB4F73A824C35EE3008764E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB4F73A724C35EE3008764E9 /* Assets.xcassets */; };
 		DB4F73AB24C35EE3008764E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB4F73A924C35EE3008764E9 /* LaunchScreen.storyboard */; };
 		DB4F73B624C35EE3008764E9 /* E_CommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F73B524C35EE3008764E9 /* E_CommerceTests.swift */; };
+		DB4F740A24C36C75008764E9 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740224C36C74008764E9 /* Category+CoreDataProperties.swift */; };
+		DB4F740B24C36C75008764E9 /* Product+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740324C36C74008764E9 /* Product+CoreDataClass.swift */; };
+		DB4F740C24C36C75008764E9 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740424C36C74008764E9 /* Product+CoreDataProperties.swift */; };
+		DB4F740D24C36C75008764E9 /* Variant+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740524C36C74008764E9 /* Variant+CoreDataClass.swift */; };
+		DB4F740E24C36C75008764E9 /* SubCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740624C36C74008764E9 /* SubCategory+CoreDataClass.swift */; };
+		DB4F740F24C36C75008764E9 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740724C36C74008764E9 /* Category+CoreDataClass.swift */; };
+		DB4F741024C36C75008764E9 /* Variant+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740824C36C74008764E9 /* Variant+CoreDataProperties.swift */; };
+		DB4F741124C36C75008764E9 /* SubCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F740924C36C74008764E9 /* SubCategory+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,14 @@
 		DB4F73B124C35EE3008764E9 /* E-CommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-CommerceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB4F73B524C35EE3008764E9 /* E_CommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_CommerceTests.swift; sourceTree = "<group>"; };
 		DB4F73B724C35EE3008764E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB4F740224C36C74008764E9 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB4F740324C36C74008764E9 /* Product+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB4F740424C36C74008764E9 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB4F740524C36C74008764E9 /* Variant+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Variant+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB4F740624C36C74008764E9 /* SubCategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SubCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB4F740724C36C74008764E9 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DB4F740824C36C74008764E9 /* Variant+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Variant+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DB4F740924C36C74008764E9 /* SubCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SubCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +97,7 @@
 		DB4F739A24C35EDA008764E9 /* E-Commerce */ = {
 			isa = PBXGroup;
 			children = (
+				DB4F740124C36C74008764E9 /* DB Model */,
 				DB4F739B24C35EDA008764E9 /* AppDelegate.swift */,
 				DB4F739D24C35EDA008764E9 /* SceneDelegate.swift */,
 				DB4F739F24C35EDA008764E9 /* ViewController.swift */,
@@ -100,6 +117,21 @@
 				DB4F73B724C35EE3008764E9 /* Info.plist */,
 			);
 			path = "E-CommerceTests";
+			sourceTree = "<group>";
+		};
+		DB4F740124C36C74008764E9 /* DB Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB4F740224C36C74008764E9 /* Category+CoreDataProperties.swift */,
+				DB4F740324C36C74008764E9 /* Product+CoreDataClass.swift */,
+				DB4F740424C36C74008764E9 /* Product+CoreDataProperties.swift */,
+				DB4F740524C36C74008764E9 /* Variant+CoreDataClass.swift */,
+				DB4F740624C36C74008764E9 /* SubCategory+CoreDataClass.swift */,
+				DB4F740724C36C74008764E9 /* Category+CoreDataClass.swift */,
+				DB4F740824C36C74008764E9 /* Variant+CoreDataProperties.swift */,
+				DB4F740924C36C74008764E9 /* SubCategory+CoreDataProperties.swift */,
+			);
+			path = "DB Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,10 +235,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB4F740E24C36C75008764E9 /* SubCategory+CoreDataClass.swift in Sources */,
 				DB4F73A024C35EDA008764E9 /* ViewController.swift in Sources */,
+				DB4F741124C36C75008764E9 /* SubCategory+CoreDataProperties.swift in Sources */,
 				DB4F739C24C35EDA008764E9 /* AppDelegate.swift in Sources */,
+				DB4F740F24C36C75008764E9 /* Category+CoreDataClass.swift in Sources */,
+				DB4F740A24C36C75008764E9 /* Category+CoreDataProperties.swift in Sources */,
+				DB4F741024C36C75008764E9 /* Variant+CoreDataProperties.swift in Sources */,
+				DB4F740C24C36C75008764E9 /* Product+CoreDataProperties.swift in Sources */,
 				DB4F73A624C35EDA008764E9 /* E_Commerce.xcdatamodeld in Sources */,
 				DB4F739E24C35EDA008764E9 /* SceneDelegate.swift in Sources */,
+				DB4F740B24C36C75008764E9 /* Product+CoreDataClass.swift in Sources */,
+				DB4F740D24C36C75008764E9 /* Variant+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "LMNTRIX.E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -394,7 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "LMNTRIX.E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
