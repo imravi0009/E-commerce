@@ -80,9 +80,9 @@ class ProductListViewController: UIViewController {
         var actions: [(String, UIAlertAction.Style)] = []
         
         for rank in rankings {
-            actions.append((rank.name ?? ""  , UIAlertAction.Style.default))
+            actions.append(((rank.name ?? "").capitalized  , UIAlertAction.Style.default))
         }
-        actions.append(("Clear", UIAlertAction.Style.default))
+        actions.append(("Clear filtering", UIAlertAction.Style.default))
         actions.append(("Cancel", UIAlertAction.Style.cancel))
         
         Alerts.showActionsheet(viewController: self, title: "Select Ranking option", message: "", actions: actions) { [unowned self] (index) in
