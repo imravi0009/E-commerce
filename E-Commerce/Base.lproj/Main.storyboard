@@ -162,23 +162,23 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRF-uM-xwM">
-                                                    <rect key="frame" x="0.0" y="72" width="150" height="0.0"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRF-uM-xwM">
+                                                    <rect key="frame" x="0.0" y="162" width="150" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="CPU-ta-0om" firstAttribute="leading" secondItem="29A-Iq-eVY" secondAttribute="leading" id="6TO-Zi-O4o"/>
                                                 <constraint firstAttribute="trailing" secondItem="ZRF-uM-xwM" secondAttribute="trailing" constant="5" id="GzL-I2-a2W"/>
+                                                <constraint firstAttribute="bottom" secondItem="ZRF-uM-xwM" secondAttribute="bottom" constant="5" id="VTA-SZ-red"/>
                                                 <constraint firstAttribute="trailing" secondItem="CPU-ta-0om" secondAttribute="trailing" id="b3G-Km-raX"/>
                                                 <constraint firstItem="ZRF-uM-xwM" firstAttribute="leading" secondItem="29A-Iq-eVY" secondAttribute="leading" id="bYf-vb-yPo"/>
                                                 <constraint firstItem="CPU-ta-0om" firstAttribute="top" secondItem="29A-Iq-eVY" secondAttribute="top" constant="10" id="dYK-sL-wmF"/>
                                                 <constraint firstAttribute="trailing" secondItem="uN3-sa-jeE" secondAttribute="trailing" constant="5" id="fcs-e3-g5u"/>
                                                 <constraint firstItem="uN3-sa-jeE" firstAttribute="leading" secondItem="29A-Iq-eVY" secondAttribute="leading" constant="5" id="gjE-3M-DYa"/>
                                                 <constraint firstItem="uN3-sa-jeE" firstAttribute="top" secondItem="CPU-ta-0om" secondAttribute="bottom" constant="10" id="nGa-o9-jdf"/>
-                                                <constraint firstItem="ZRF-uM-xwM" firstAttribute="top" secondItem="uN3-sa-jeE" secondAttribute="bottom" constant="5" id="xBT-c9-dsP"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

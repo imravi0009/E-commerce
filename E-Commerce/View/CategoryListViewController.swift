@@ -105,7 +105,6 @@ extension CategoryListViewController:UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        print("DID SELECT row: \(indexPath.row), section: \(indexPath.section)")
         
         let productsVC = self.productListViewController()
         let cate = categories[indexPath.section]
@@ -141,7 +140,6 @@ extension CategoryListViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: SubCategoryCell.self)) as! SubCategoryCell
         if let subCategory = categories[indexPath.section].subCategories?.allObjects[indexPath.row - 1] as? SubCategory, let cate = dataManager.fetchCategoryFor(id: Int(subCategory.id)) {
-            print(subCategory.id)
             cell.titleLabel.text = cate.name
         }
         cell.layoutMargins = UIEdgeInsets.zero

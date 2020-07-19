@@ -46,7 +46,6 @@ class ProductDetailsViewController: UIViewController {
             
             Alerts.showActionsheet(viewController: self, title: "Select variant", message: "", actions: actions) { [unowned self] (index) in
                 
-                print("call action \(index)")
                 if variants.count > index{
                     self.variant = variants[index]
                     self.priceCalcualtion()
