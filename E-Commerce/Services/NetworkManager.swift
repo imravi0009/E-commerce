@@ -83,8 +83,9 @@ class DataStoring {
                         
                         if let variants = product["variants"] as? [Any]{
                             for case let variant as [String:Any] in variants {
-                              guard let id = variant["id"] as? Int,let color = variant["color"] as? String,let size = variant["size"] as? Int, let price = variant["price"] as? Float   else {continue}
-                                let variant_model = dataManager.createVariant(id: id, price: price, size: Int32(size), color: color)
+                              guard let id = variant["id"] as? Int,let color = variant["color"] as? String, let price = variant["price"] as? Float   else {continue}
+                                let size = variant["size"] as? Int
+                                let variant_model = dataManager.createVariant(id: id, price: price, size: size, color: color)
                                 product_model.addToVariants(variant_model)
                             }
                         }

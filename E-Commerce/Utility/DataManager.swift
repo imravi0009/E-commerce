@@ -25,12 +25,12 @@ class DataManager{
         return newItem
     }
     
-    func createVariant(id:Int, price:Float, size:Int32,color:String) -> Variant {
+    func createVariant(id:Int, price:Float, size:Int?,color:String) -> Variant {
         let newItem = NSEntityDescription.insertNewObject(forEntityName: "Variant", into: context) as! Variant
         newItem.id = Int32(id)
         newItem.price = price
         newItem.color = color
-        newItem.size = size
+        newItem.size = (size == nil ? nil : Int32(size!)) ?? 0
         return newItem
     }
     
@@ -75,6 +75,23 @@ class DataManager{
             }
         }
     }
+    
+    func fetchAllRankings() -> [Ranking] {
+        do {
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Ranking")
+            do {
+                let response = try context.fetch(fetchRequest)
+                return response as! [Ranking]
+                
+            } catch let error as NSError {
+                // failure
+                print(error)
+                return [Ranking]()
+            }
+        }
+    }
+    
+    
     
     func fetchCategoryFor(id:Int) -> Category? {
         do {

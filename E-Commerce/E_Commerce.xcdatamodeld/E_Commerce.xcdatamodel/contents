@@ -15,7 +15,7 @@
         <relationship name="variants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Variant"/>
     </entity>
     <entity name="Ranking" representedClassName="Ranking" syncable="YES" codeGenerationType="class">
-        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
         <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RankingProduct"/>
     </entity>
     <entity name="RankingProduct" representedClassName="RankingProduct" syncable="YES" codeGenerationType="class">
@@ -35,7 +35,7 @@
     <elements>
         <element name="Category" positionX="63.609375" positionY="-209.0390625" width="128" height="103"/>
         <element name="Product" positionX="-7.87109375" positionY="22.05859375" width="128" height="28"/>
-        <element name="Ranking" positionX="216" positionY="-9" width="128" height="28"/>
+        <element name="Ranking" positionX="216" positionY="-9" width="128" height="73"/>
         <element name="RankingProduct" positionX="225" positionY="0" width="128" height="88"/>
         <element name="SubCategory" positionX="361.984375" positionY="-114.8359375" width="128" height="58"/>
         <element name="Variant" positionX="217.40234375" positionY="147.32421875" width="128" height="103"/>
