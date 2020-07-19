@@ -92,7 +92,8 @@ class DataStoring {
                 }
                 if let child_categories = category["child_categories"] as? [Int]{
                     for id in child_categories {
-                        let _ = dataManager.createSubCategory(id: id)
+                        let sub_category_model = dataManager.createSubCategory(id: id)
+                    cate_model.addToSubCategories(sub_category_model)
                     }
                 }
             }
