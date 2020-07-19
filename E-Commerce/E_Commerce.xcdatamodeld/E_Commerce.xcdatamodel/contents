@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="18G95" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Category" representedClassName="Category" syncable="YES">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
         <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
         <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Product"/>
     </entity>
-    <entity name="Product" representedClassName="Product" syncable="YES">
+    <entity name="Product" representedClassName="Product" syncable="YES" codeGenerationType="class">
         <attribute name="date_added" optional="YES" attributeType="String"/>
         <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
         <attribute name="taxAmount" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="taxName" optional="YES" attributeType="String"/>
+        <attribute name="taxName" attributeType="String"/>
         <relationship name="variants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Variant"/>
     </entity>
-    <entity name="SubCategory" representedClassName="SubCategory" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category"/>
+    <entity name="Ranking" representedClassName="Ranking" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RankingProduct"/>
     </entity>
-    <entity name="Variant" representedClassName="Variant" syncable="YES">
+    <entity name="RankingProduct" representedClassName="RankingProduct" syncable="YES" codeGenerationType="class">
+        <attribute name="count" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pruduct_id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="SubCategory" representedClassName="SubCategory" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Variant" representedClassName="Variant" syncable="YES" codeGenerationType="class">
         <attribute name="color" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="price" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="size" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <elements>
-        <element name="Product" positionX="-7.87109375" positionY="22.05859375" width="128" height="133"/>
-        <element name="Category" positionX="63.609375" positionY="-209.0390625" width="128" height="88"/>
+        <element name="Category" positionX="63.609375" positionY="-209.0390625" width="128" height="28"/>
+        <element name="Product" positionX="-7.87109375" positionY="22.05859375" width="128" height="28"/>
+        <element name="Ranking" positionX="216" positionY="-9" width="128" height="28"/>
+        <element name="RankingProduct" positionX="225" positionY="0" width="128" height="88"/>
+        <element name="SubCategory" positionX="361.984375" positionY="-114.8359375" width="128" height="58"/>
         <element name="Variant" positionX="217.40234375" positionY="147.32421875" width="128" height="103"/>
-        <element name="SubCategory" positionX="361.984375" positionY="-114.8359375" width="128" height="73"/>
     </elements>
 </model>
